@@ -1,7 +1,11 @@
 
-import React from "react";
+import { useEffect } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import '../Styles/Home.css'
 
 
@@ -23,31 +27,34 @@ const cardData = [
     link3: "/Aprender/Unidad2",
   },
   {
-    imgSrc:
-      "https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/operating-systems.jpg",
+    imgSrc: "https://i.ytimg.com/vi/Xm9Eah8t0d4/maxresdefault.jpg",
     title: "Unidad 3",
     text: "Gestión de la memoria e IO",
     link1: "/Pruebas/Unidad3",
     link2: "/Guias/Unidad3",
     link3: "/Aprender/Unidad3",
   },
-    {
-    imgSrc:
-        "https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/operating-systems.jpg",
+  {
+    imgSrc: "https://i.ytimg.com/vi/Xm9Eah8t0d4/maxresdefault.jpg",
     title: "REPASO P.A.",
     text: "Conglomerado de todo",
     link1: "/Pruebas/Repaso",
     link2: "/Guias/Repaso",
     link3: "/Aprender/Repaso",
-    },
+  },
 ];
 
 function Home() {
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
+
   return (
     <div>
         <Row xs={1} md={2} className="g-4">
             {Array.from({ length: 4 }).map((_, idx) => (
-            <Col key={idx}>
+            <Col key={idx} data-aos="fade-up" data-aos-delay={idx * 100} data-aos-offset="200">
                 <Card
                     className="small-card"
                     border="secondary"
