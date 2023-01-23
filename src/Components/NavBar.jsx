@@ -6,7 +6,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 function OffcanvasExample() {
     return (
         <>
-        {["md"].map((expand) => (
+        {["xl"].map((expand) => (
         <Navbar
             key={expand}
             bg="dark"
@@ -31,6 +31,7 @@ function OffcanvasExample() {
                             <Nav.Link href="/Aprender">Aprender¿?</Nav.Link>
                             <Nav.Link href="/Peps">PEPS anteriores</Nav.Link>
                             <Nav.Link href="/Guias">Guias Anteriores</Nav.Link>
+                            <Nav.Link href="/About">Acerca de</Nav.Link>
                         </Nav>
                     </Offcanvas.Body>
                     </Navbar.Offcanvas>
