@@ -6,7 +6,6 @@ import Button from "react-bootstrap/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import '../Styles/Home.css'
 
 
 const cardData = [
