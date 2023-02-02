@@ -7,7 +7,7 @@ export const Footer = () => {
         <p className="text-center mb-4">Hecho con amor por Pipetboy</p>
         <div className="d-flex justify-content-center">
           <a
-            href="https://github.com/pipetboy"
+            href="https://github.com/pipetboy2001"
             target="_blank"
             className="btn btn-secondary mx-3"
           >
