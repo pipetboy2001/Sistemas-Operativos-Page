@@ -7,8 +7,7 @@ import Navbar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import About from "./Components/About";
-
-/**/
+import NotFound from "./Components/NotFound";
 
 /*Unidad 1*/
 import Learning1 from "./Components/Unidades/Unidad 1/Aprendisaje";
@@ -26,6 +25,7 @@ function App() {
         <Route path="/Aprender/Unidad1" element={<Learning1 />} />
         <Route path="/Guias/Unidad1" element={<Guiades1 />} />
         <Route path="/Pruebas/Unidad1" element={<Exam1 />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
