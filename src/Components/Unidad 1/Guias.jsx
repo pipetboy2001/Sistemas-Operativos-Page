@@ -4,10 +4,12 @@ import Tabs from "react-bootstrap/Tabs";
 
 /*Pdf viewer */
 import PdfViewer from "../PdfView";
+import Accordion from "react-bootstrap/Accordion";
+
 
 
 function ControlledTabsExample() {
-  const [key, setKey] = useState("home");
+  const [key, setKey] = useState("Guia1");
 
   return (
     <Tabs
@@ -16,18 +18,49 @@ function ControlledTabsExample() {
       onSelect={(k) => setKey(k)}
       className="mb-3"
     >
-      <Tab eventKey="home" title="Home">
-        <h1>Hola página 1</h1>
+      <Tab eventKey="Guia1" title="Guia 1">
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Ver Pdf</Accordion.Header>
+            <Accordion.Body>
+              <PdfViewer src="/src/assets/Unidad1/Guias/Guia1.pdf" />
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Pregunta 1</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </Tab>
 
-        <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
+      <Tab eventKey="Guia2" title="Guia 2">
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Ver Pdf</Accordion.Header>
+            <Accordion.Body>
+              <PdfViewer src="/src/assets/Unidad1/Guias/Guia2.pdf" />
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Pregunta 1</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
       </Tab>
-      <Tab eventKey="profile" title="Profile">
-        <h1>Hola página 2</h1>
-        <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
-      </Tab>
-      <Tab eventKey="contact" title="Contact">
-        <h1>Hola página 3</h1>
-        <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
+
+      <Tab eventKey="Guia 3" title="Guia 3">
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Ver Pdf</Accordion.Header>
+            <Accordion.Body>
+              <PdfViewer src="/src/assets/Unidad1/Guias/Guia3.pdf" />
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Pregunta 1</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
       </Tab>
     </Tabs>
   );
