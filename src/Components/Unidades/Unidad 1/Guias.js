@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-
 /*Pdf viewer */
 import PdfViewer from "../../PdfView";
 import Accordion from "react-bootstrap/Accordion";
 
-function ControlledTabsExample() {
+function Guia() {
   const [key, setKey] = useState("Guia1");
 
   return (
+    <>
+      <center><h1>Guias Unidad 1</h1></center>
     <Tabs
       id="controlled-tab-example"
       activeKey={key}
@@ -116,14 +117,39 @@ function ControlledTabsExample() {
             <Accordion.Header>Ver Pdf</Accordion.Header>
             <Accordion.Body>
               <PdfViewer src="https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview" />
-
-              
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Pregunta 1</Accordion.Header>
+              <Accordion.Header>Pregunta 1 - ¿Cuántos procesos crea el siguiente código para MAX = 5?</Accordion.Header>
             <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="2">
+              <Accordion.Header>Pregunta 2 - dibuje el árbol de procesos indicando para cada nodo
+                (proceso) lo que imprime</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+              <Accordion.Header>Pregunta 3 - ¿Qué
+                problema puede distorsionar la medición en sistemas que soportan
+                multiprogramación y multiprocesador?</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+              <Accordion.Header>Pregunta 4 - qué sentido tiene la
+                instrucción return (línea 5) justo después de haber realizado el cambio de contexto.</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+              <Accordion.Header>Pregunta 5 - indique los valores que
+                se imprimen por pantalla</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+              <Accordion.Header>Pregunta 6 - cree la siguiente estructura de comunicación entre
+                procesos</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+
         </Accordion>
       </Tab>
 
@@ -136,13 +162,46 @@ function ControlledTabsExample() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Pregunta 1</Accordion.Header>
+              <Accordion.Header>Pregunta 1 - ¿Qué políticas de planificación del procesador maximizan el throughtput?</Accordion.Header>
             <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="2">
+              <Accordion.Header>Pregunta 2 - ¿Por qué la política del procesador RR minimiza el tiempo de respuesta?</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+              <Accordion.Header>Pregunta 3 - ¿Cuál es la
+                utilización del sistema?</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+              <Accordion.Header>Pregunta 4 - calcule la utilización del procesador</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+              <Accordion.Header>Pregunta 5 - ¿qué mecanismos usted integraría al scheduler para evitar este problema?</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+              <Accordion.Header>Pregunta 6 - Qué característica hace difícil o imposible la implementación de políticas de
+                planificación como SPN, SRT o HRRN.</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+              <Accordion.Header>Pregunta 7 - syscall siempre implica un cambio en el modo de ejecución del
+                sistema. Explique qué sentido tiene hacer este cambio</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="8">
+              <Accordion.Header>Pregunta 8 - Calcule la utilización del procesador</Accordion.Header>
+            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+          </Accordion.Item>
+
         </Accordion>
       </Tab>
     </Tabs>
+    </> 
   );
 }
 
-export default ControlledTabsExample;
+export default Guia;

@@ -5,8 +5,6 @@ function PdfView({ src }) {
           className="VisorPDF"
           title="PDF Viewer" 
           src={src}
-
-
           />;
 }
 export default PdfView;
