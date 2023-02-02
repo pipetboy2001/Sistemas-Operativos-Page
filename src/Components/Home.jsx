@@ -62,14 +62,14 @@ function Home() {
                     <Card.Img variant="top" src={cardData[idx].imgSrc} />
                     <Card.Body>
                         <Card.Text>{cardData[idx].text}</Card.Text>
-                        <a href={cardData[idx].link1}>
-                        <Button variant="primary">Pruebas</Button>
+                        <a href={cardData[idx].link3}>
+                        <Button variant="primary">Aprender</Button>
                         </a>
                         <a href={cardData[idx].link2}>
                         <Button variant="primary">Guias</Button>
                         </a>
-                        <a href={cardData[idx].link3}>
-                        <Button variant="primary">Aprender</Button>
+                        <a href={cardData[idx].link1}>
+                        <Button variant="primary">Pruebas</Button>
                         </a>
                     </Card.Body>
                 </Card>

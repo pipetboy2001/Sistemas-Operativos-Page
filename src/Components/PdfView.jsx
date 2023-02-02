@@ -1,7 +1,7 @@
 import React from "react";
 
 function PdfView({ src }) {
-  return <iframe style={{ width: "800px", height: "600px" }} src={src} />;
+  return <iframe className='VisorPDF' src={src} />;
 }
 
 export default PdfView;

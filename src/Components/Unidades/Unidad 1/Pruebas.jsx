@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import Accordion from "react-bootstrap/Accordion";
-import PdfViewer from "../PdfView";
+import PdfViewer from "../../PdfView";
 
 function LeftTabsExample() {
   return (
