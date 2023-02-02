@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import Button from "react-bootstrap/Button";
 
 /*Pdf viewer */
 import PdfViewer from "../../PdfView";
@@ -9,12 +8,6 @@ import Accordion from "react-bootstrap/Accordion";
 
 function ControlledTabsExample() {
   const [key, setKey] = useState("Guia1");
-
-  function handleDownload(url) {
-    console.log("Descargando archivo");
-    event.preventDefault();
-    window.open(url, "_blank");
-  }
 
   return (
     <Tabs
@@ -30,7 +23,7 @@ function ControlledTabsExample() {
               Ver Pdf
             </Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia1.pdf" />
+              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
             </Accordion.Body>
           </Accordion.Item>
 
@@ -122,7 +115,7 @@ function ControlledTabsExample() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Ver Pdf</Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia2.pdf" />
+              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -137,7 +130,7 @@ function ControlledTabsExample() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Ver Pdf</Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia3.pdf" />
+              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
