@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "^/(.*)$",
+      "dest": "/index.html"
+    }
+  ],
+  "builds": [
+    { "src": "public/**/*", "use": "@now/static" },
+    { "src": "src/**/*.{js,jsx}", "use": "@now/node" }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
