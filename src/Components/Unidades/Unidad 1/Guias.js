@@ -23,7 +23,7 @@ function ControlledTabsExample() {
               Ver Pdf
             </Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
+              <PdfViewer src="https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview" />
             </Accordion.Body>
           </Accordion.Item>
 
@@ -115,7 +115,9 @@ function ControlledTabsExample() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Ver Pdf</Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
+              <PdfViewer src="https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview" />
+
+              
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -130,7 +132,7 @@ function ControlledTabsExample() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Ver Pdf</Accordion.Header>
             <Accordion.Body>
-              <PdfViewer src="https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf" />
+              <PdfViewer src="https://drive.google.com/file/d/13Y0_QOwK2wEL5Mf7cy3C9SaQuG9k-ccp/preview" />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
