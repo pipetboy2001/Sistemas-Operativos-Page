@@ -59,7 +59,7 @@ function OffcanvasExample() {
                         <Dropdown.Item href="/Guias/Unidad2">
                           Guia
                         </Dropdown.Item>
-                        <Dropdown.Item href="/Pruebas/Unidad3">
+                        <Dropdown.Item href="/Pruebas/Unidad2">
                           Pruebas
                         </Dropdown.Item>
                       </Dropdown.Menu>

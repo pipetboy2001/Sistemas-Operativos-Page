@@ -1,153 +1,105 @@
 import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import Button from "react-bootstrap/Button";
-
 /*Pdf viewer */
 import PdfViewer from "../../PdfView";
 import Accordion from "react-bootstrap/Accordion";
 
-function ControlledTabsExample() {
-  const [key, setKey] = useState("Guia1");
-
-  function handleDownload(url) {
-    console.log("Descargando archivo");
-    event.preventDefault();
-    window.open(url, "_blank");
-  }
+function Guia() {
+  const [key, setKey] = useState("Guia4");
 
   return (
-    <Tabs
-      id="controlled-tab-example"
-      activeKey={key}
-      onSelect={(k) => setKey(k)}
-      className="mb-3"
-    >
-      <Tab eventKey="Guia1" title="Guia 1">
-        <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>
-              Ver Pdf
-            </Accordion.Header>
-            <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia1.pdf" />
-            </Accordion.Body>
-          </Accordion.Item>
+    <>
+      <center><h1>Guias Unidad 2</h1></center>
+      <Tabs
+        id="controlled-tab-example"
+        activeKey={key}
+        onSelect={(k) => setKey(k)}
+        className="mb-3"
+      >
+        <Tab eventKey="Guia4" title="Guia 4">
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
+                Ver Pdf
+              </Accordion.Header>
+              <Accordion.Body>
+                <PdfViewer src="https://drive.google.com/file/d/13ck-x05Wj4HXTkG8xXherUsi5zkevfvu/preview" />
+              </Accordion.Body>
+            </Accordion.Item>
 
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>
-              Pregunta 1 - ¿Cuál es la diferencia entre System Call y Procedure
-              Call?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                Pregunta 1 - 
+              </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Tab>
 
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>
-              Pregunta 2 - ¿Cuál es la diferencia entre un System Call y un
-              cambio de contexto?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
+        <Tab eventKey="Guia5" title="Guia 5">
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Ver Pdf</Accordion.Header>
+              <Accordion.Body>
+                <PdfViewer src="https://drive.google.com/file/d/13cbDzA_kLBrGY10nIYmWM4yAr2lxkUnP/preview" />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Pregunta 1 - ¿Cuántos procesos crea el siguiente código para MAX = 5?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Tab>
 
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>
-              Pregunta 3 - ¿Cuál es la diferencia entre el Kernel Stack y el
-              User Stack?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
+        <Tab eventKey="GuiaExtra" title="Guia Extra">
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Ver Pdf</Accordion.Header>
+              <Accordion.Body>
+                <PdfViewer src="https://drive.google.com/file/d/13c2rjWsrqxPNBoX6rEoq1OLSAjts9VEE/preview" />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Pregunta 1 - </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Tab>
 
-          <Accordion.Item eventKey="4">
-            <Accordion.Header>
-              Pregunta 4 - ¿Qué se almacena en el Heap?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
+        <Tab eventKey="Trabajo1" title="Trabajo en clases 1">
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Ver Pdf</Accordion.Header>
+              <Accordion.Body>
+                <PdfViewer src="https://drive.google.com/file/d/13bFk4jlqaP5GQwLnTD8AeLhRF6lHjECX/preview" />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Pregunta 1 - </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Tab>
 
-          <Accordion.Item eventKey="5">
-            <Accordion.Header>
-              Pregunta 5 - ¿Qué bandera en EFLAGS para la arquitectura x86 apoya
-              el proceso de cambio de contexto?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
+        <Tab eventKey="Trabajo2" title="Trabajo en clases 2">
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Ver Pdf</Accordion.Header>
+              <Accordion.Body>
+                <PdfViewer src="https://drive.google.com/file/d/13asC_EIkU4d8dWmZzkseI64vGaxx2KA8/preview" />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Pregunta 1 - </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Tab>
 
-          <Accordion.Item eventKey="6">
-            <Accordion.Header>
-              Pregunta 6 - Explique las diferencias entre un SO basado en
-              procesos y un SO que se ejecuta en el contexto de procesos
-              usuarios.
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="7">
-            <Accordion.Header>
-              Pregunta 7 - a dibuje el espacio de direcciones del proceso en el
-              momento que se está ejecutando la función void f(char*)
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="8">
-            <Accordion.Header>
-              Pregunta 8 - Cree un esquema donde muestre el proceso que ocurre a
-              nivel de proceso usuario y kernel cuando ocurre un syscall
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="9">
-            <Accordion.Header>
-              Pregunta 9 - ¿En qué segmentos caen las direcciones mostradas por
-              pantalla?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="10">
-            <Accordion.Header>
-              Pregunta 10 - ¿Qué mecanismos por parte del sistema operativo se
-              gatillan cuando corremos el siguiente programa ya compilado a
-              través de la bash?
-            </Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-      </Tab>
-
-      <Tab eventKey="Guia2" title="Guia 2">
-        <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>Ver Pdf</Accordion.Header>
-            <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia2.pdf" />
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Pregunta 1</Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-      </Tab>
-
-      <Tab eventKey="Guia 3" title="Guia 3">
-        <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>Ver Pdf</Accordion.Header>
-            <Accordion.Body>
-              <PdfViewer src="/src/assets/Unidad1/Guias/Guia3.pdf" />
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Pregunta 1</Accordion.Header>
-            <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-      </Tab>
-    </Tabs>
+      </Tabs>
+    </>
   );
 }
 
-export default ControlledTabsExample;
+export default Guia;
