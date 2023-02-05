@@ -30,10 +30,34 @@ function Guia() {
 
             <Accordion.Item eventKey="1">
               <Accordion.Header>
-                Pregunta 1 - 
+                Pregunta 1 - ventajas tiene el uso de hebra por sobre el uso de procesos.
+              </Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet
+              </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                Pregunta 2 - ¿Qué problema potencial puede detectar en el código?
               </Accordion.Header>
               <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
             </Accordion.Item>
+
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                Pregunta 3 - Para la siguiente programa:
+              </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                Pregunta 4 - Explique por qué se da este comportamiento.
+              </Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
           </Accordion>
         </Tab>
 
