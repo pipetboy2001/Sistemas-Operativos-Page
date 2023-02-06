@@ -70,9 +70,76 @@ function Guia() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Pregunta 1 - ¿Cuántos procesos crea el siguiente código para MAX = 5?</Accordion.Header>
+              <Accordion.Header>Pregunta 1 - ¿Es la solución deadlock-free?</Accordion.Header>
               <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
             </Accordion.Item>
+
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Pregunta 2 - El
+                comportamiento descrito es para ambos sentidos. ...</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Pregunta 3 - ¿¿Se provee
+                exclusión mutua a través de las funciones lock y unlock?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>Pregunta 4 - ¿Es posible que una solución basada en monitores a un problema de EM produzca
+                deadlock?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>Pregunta 5 - vez. Escriba las
+funciones usando semáforos , evitando inhanición y busy-waiting.?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>Pregunta 6 -100 reos</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>Pregunta 7 - ¿Qué es lo que se muestra por
+                pantalla?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="8">
+              <Accordion.Header>Pregunta 8 - modificando el código para que arroje la
+                siguiente salida siempre</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="9">
+
+              <Accordion.Header>Pregunta 9 - resolver el problema de
+                concurrencia y no la lógica detrás de la cola</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="10">
+              <Accordion.Header>Pregunta 10 - analice el siguiente código de
+                una fila de enteros</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="11">
+              <Accordion.Header>Pregunta 11 - Coordine a los autos utilizando semáforos y
+                evite que ocurra deadlock</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="12">
+              <Accordion.Header>Pregunta 12 - ¿Es posible que ocurra deadlock cuando los recursos compartidos son
+                consumibles?</Accordion.Header>
+              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
+            </Accordion.Item>
+            
           </Accordion>
         </Tab>
 
