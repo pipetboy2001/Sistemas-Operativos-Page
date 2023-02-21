@@ -1,0 +1,91 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "¿Cuál es la diferencia entre System Call y Procedure Call?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 2,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": " ¿Cuál es la diferencia entre un System Call y un cambio de contexto?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 3,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "¿Cuál es la diferencia entre el Kernel Stack y el User Stack?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 4,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "¿Qué se almacena en el Heap?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 5,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "¿Qué bandera en EFLAGS para la arquitectura x86 apoya el proceso de cambio de contexto?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 6,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": " Explique las diferencias entre un SO basado en procesos y un SO que se ejecuta en el contexto de procesos usuarios.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 7,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "Para el siguiente programa dibuje el espacio de direcciones del proceso en el momento que se está ejecutando la función void f(char*). Indique el contenido de cada segmento.",
+      "code": "",
+      "respuesta": "George Washington",
+      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    },
+    {
+      "id": 8,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "Cree un esquema donde muestre el proceso que ocurre a nivel de proceso usuario y kernel cuando ocurre un syscall.",
+      "code": "",
+      "respuesta": "George Washington",
+      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    },
+    {
+      "id": 9,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "Asuma que %p muestra la dirección (en hexadecimal) del objeto (variable). Considerando la estructura de un proceso vista en clases ¿En qué segmentos caen las direcciones mostradas por pantalla? Explique. ",
+      "code": "",
+      "respuesta": "George Washington",
+      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    },
+    {
+      "id": 10,
+      "unidad": "Unidad 1",
+      "guia": "Guía 1",
+      "pregunta": "¿Qué mecanismos por parte del sistema operativo se gatillan cuando corremos el siguiente programa ya compilado a través de la bash? Describa el proceso.",
+      "code": "",
+      "respuesta": "George Washington",
+      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    },
+    {
+      "id": 11,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "¿Qué mecanismos por parte del sistema operativo se gatillan cuando corremos el siguiente programa ya compilado a través de la bash? Describa el proceso.",
+      "code": "",
+      "respuesta": "George Washington",
+      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    }
+  ]
+}
