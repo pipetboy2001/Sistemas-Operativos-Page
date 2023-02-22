@@ -56,7 +56,6 @@
       "unidad": "Unidad 1",
       "guia": "Guía 1",
       "pregunta": "Cree un esquema donde muestre el proceso que ocurre a nivel de proceso usuario y kernel cuando ocurre un syscall.",
-      "code": "",
       "respuesta": "George Washington",
       "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
     },
@@ -74,18 +73,114 @@
       "unidad": "Unidad 1",
       "guia": "Guía 1",
       "pregunta": "¿Qué mecanismos por parte del sistema operativo se gatillan cuando corremos el siguiente programa ya compilado a través de la bash? Describa el proceso.",
-      "code": "",
-      "respuesta": "George Washington",
-      "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+      "respuesta": "George Washington"
     },
     {
       "id": 11,
       "unidad": "Unidad 1",
       "guia": "Guía 2",
-      "pregunta": "¿Qué mecanismos por parte del sistema operativo se gatillan cuando corremos el siguiente programa ya compilado a través de la bash? Describa el proceso.",
+      "pregunta": "¿Cuántos procesos crea el siguiente código para MAX = 5? Considere que las funciones retornan con éxito.",
+      "code": "",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 12,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "Para el siguiente programa, dibuje el árbol de procesos indicando para cada nodo(proceso) lo que imprime. Asuma que no existen errores de ningún tipo.",
       "code": "",
       "respuesta": "George Washington",
       "imagen": "https://i.imgur.com/1Q1Z1Zm.png"
+    },
+    {
+      "id": 13,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "Una manera de medir el costo de un cambio de contexto es crear dos procesos que se comunican a través de dos pipes. El primer proceso ejecuta un write al primer pipe para luego hacer un read al segundo. Por otro lado, el segundo proceso ejecuta un read al primer pipe y un write al segundo. Este ciclo se repite, lo cual nos permite medir repetidas veces el cambio de contexto para luego obtener un promedio. ¿Qué problema puede distorsionar la medición en sistemas que soportan multiprogramación y multiprocesador?",
+      "code": "",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":14,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "El siguiente código es un extracto modificado de la última parte del scheduler de Linux, el que se ejecuta en el contexto de los procesos usuarios:",  
+      "code": "",
+      "pregunta2": "prev y next son punteros a los PCBs de dos procesos. prev apunta al proceso que actualmente se está ejecutando en el procesador, y next al proceso que el scheduler ha seleccionado para que se ejecute a continuación. Si el proceso seleccionado es distinto al actual, entonces en la línea 2 se actualiza el contador del número de veces que se ha realizado cambio de contexto. Esto es sólo para registrar estadísticas. Luego, en la línea 3 se realiza el cambio de contexto. Explique qué sentido tiene la instrucción return (línea 5) justo después de haber realizado el cambio de contexto. Pregúntese quién y cuándo se ejecuta dicha instrucción.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":15,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "Para cada proceso que se ejecuta en el siguiente programa, indique los valores que se imprimen por pantalla en las líneas 7 y 13. Asuma que no existen errores, que el PID del primer proceso es 10 y que los procesos hijos se enumeran secuencialmente a partir de 11 de acuerdo al orden de creación. Justifique su respuesta a través de un diagrama.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":16,
+      "unidad": "Unidad 1",
+      "guia": "Guía 2",
+      "pregunta": "Utilizando fork() y pipe(), cree la siguiente estructura de comunicación entre procesos:",
+      "pregunta2":"Comunicación bidireccional (2 procesos, N procesos) y Árbol binario (altura 3, altura N)",
+      "PreguntaImagen":"https://i.imgur.com/1Q1Z1Zm.png",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":17,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "¿Qué políticas de planificación del procesador maximizan el throughtput?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":18,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "¿Por qué la política del procesador RR minimiza el tiempo de respuesta?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":19,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "En un sistema de tiempo compartido, 3 procesos se ejecutan concurrentemente en un procesador. Los tiempos de servicios son 10, 8 y 5 para p1, p2 y p3 respectivamente. Si los procesos no realizan I/O y el planificador RR usa un quantum de tiempo de 2 y el overhead de cambio de contexto es 0,5 ¿Cuál es la utilización del sistema? Justifique con desarrollo.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":20,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "Suponga un sistema computacional con un planificador RR y quantum de tiempo q y overhead de tiempo de transferencia e. Asuma, además, que todos los procesos realizan I/O cuando ha transcurrido la mitad del quantum y que el overhead del módulo de I/O es t para cada parte de software. Asumiendo que existen muchos procesos, calcule la utilización del procesador. Explique.",  
+      "respuesta": "George Washington"
+    },
+    {
+      "id":21,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta":"Fixed-Priority Preemptive Scheduling (FPPS) es un algoritmo de planificación no apropiativo donde, en todo momento, el procesador siempre ejecuta el proceso de más alta prioridad entre todos los que se encuentran listos para ejecutarse. un problema común a este tipo de schedulers es que sufren de inanición. Dado este caso ¿qué mecanismos usted integraría al scheduler para evitar este problema? Ojo, no es cambiar de scheduler, sino evitar el problema.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":22,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "Qué característica hace difícil o imposible la implementación de políticas de planificación como SPN, SRT o HRRN. Para responder, recuerde cuál es la función de selección del próximo proceso a ejecutarse. Comente brevemente cada función.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":23,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "La ejecución de un syscall siempre implica un cambio en el modo de ejecución del sistema. Explique qué sentido tiene hacer este cambio y cuál es su costo en términos de performance.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":24,
+      "unidad": "Unidad 1",
+      "guia": "Guía 3",
+      "pregunta": "Calcule la utilización del procesador en un sistema donde la mitad de los procesos son pesados en I/O y la otra mitad es pesado en cómputo. Para los primeros, considere que sólo un tercio del tiempo hacen cómputo y que están bajo un algoritmo de scheduling RR. Para los segundos, considere que se ha medido que en promedio sólo un décimo del tiempo hacen I/O y que están bajo un algoritmo de scheduling FCFS. Considere un quantum de tiempo q y overhead e.",
+      "respuesta": "George Washington"
     }
+    
   ]
 }
