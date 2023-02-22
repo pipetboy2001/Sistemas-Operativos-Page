@@ -1,95 +1,77 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Dropdown from "react-bootstrap/Dropdown";
+import { useState } from "react";
+import { Container, Nav, Navbar, Offcanvas, Dropdown } from "react-bootstrap";
+
+const XL_SIZE = "xl";
 
 function OffcanvasExample() {
-    return (
-      <>
-        {["xl"].map((expand) => (
-          <Navbar
-            key={expand}
-            bg="dark"
-            variant="dark"
-            expand={expand}
-            className="mb-3"
-          >
-            <Container fluid>
-              <Navbar.Brand href="/">Sistemas Operativos </Navbar.Brand>
-              <Navbar.Toggle
-                aria-controls={`offcanvasNavbar-expand-${expand}`}
-              />
-              <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="end"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Navegacion:
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Dropdown>
-                      <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                        Unidad 1
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="/Aprender/Unidad1">
-                          Aprender
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Guias/Unidad1">
-                          Guia
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Pruebas/Unidad1">
-                          Pruebas
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                    <Dropdown>
-                      <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                        Unidad 2
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="/Aprender/Unidad2">
-                          Aprender
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Guias/Unidad2">
-                          Guia
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Pruebas/Unidad2">
-                          Pruebas
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                    <Dropdown>
-                      <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                        Unidad 3
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="/Aprender/Unidad3">
-                          Aprender
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Guias/Unidad3">
-                          Guia
-                        </Dropdown.Item>
-                        <Dropdown.Item href="/Pruebas/Unidad3">
-                          Pruebas
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+  const [expand] = useState(XL_SIZE);
 
-                    <Nav.Link href="/About">Sobre este proyecto</Nav.Link>
-                  </Nav>
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
-        ))}
-      </>
+  const navbarProps = {
+    bg: "dark",
+    variant: "dark",
+    expand: expand,
+    className: "mb-3",
+  };
+
+  function DropdownMenu({ unit }) {
+    return (
+      <Dropdown key={unit}>
+        <Dropdown.Toggle variant="dark" id={`dropdown-basic-${unit}`}>
+          Unidad {unit}
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item href={`/Aprender/Unidad${unit}`}>
+            Aprender
+          </Dropdown.Item>
+          <Dropdown.Item href={`/Guias/Unidad${unit}`}>
+            Guia
+          </Dropdown.Item>
+          <Dropdown.Item href={`/Pruebas/Unidad${unit}`}>
+            Pruebas
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     );
+  }
+
+  return (
+    <>
+      <Navbar {...navbarProps}>
+        <Container fluid>
+          <Navbar.Brand href="/">
+            <img
+              src="https://raw.githubusercontent.com/pipetboy2001/Sistemas-Operativos-Page/423a0eaf3327f764d26fe9cc467e987ec529443d/public/sistope.svg"
+              width="30"
+              height="30"
+              alt="S.O"
+            />{' '}
+            Sistemas Operativos
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls={`offcanvasNavbar-expand-${expand}`}
+          />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${expand}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                Menú de navegación
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                {[1, 2, 3].map((unit) => (
+                  <DropdownMenu key={unit} unit={unit} />
+                ))}
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
 export default OffcanvasExample;
