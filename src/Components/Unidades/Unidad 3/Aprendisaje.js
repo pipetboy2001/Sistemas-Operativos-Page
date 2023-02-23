@@ -1,12 +1,51 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import { FaLaptop, FaExternalLinkAlt } from "react-icons/fa";
 
-const LearningUnit = () => {
+const temas = [
+  {
+    nombre: "Sistema de administración de memoria",
+    descripcion: "Particionamiento de la memoria física, direccionamiento físico y virtual, paginación, segmentación",
+    imagen: "ruta/a/imagen1.png",
+    url: "/tema7",
+  },
+  {
+    nombre: "Sistemas de archivos",
+    descripcion: "Organización y acceso de archivos y directorios, administración almacenamiento secundario, sistemas de archivos en Linux",
+    imagen: "ruta/a/imagen2.png",
+    url: "/tema8",
+  },
+  {
+    nombre: "Administración de dispositivos de I/O",
+    descripcion: "Organización de los servicios de I/O, buffering de I/O, planificación de disco, sistemas RAID",
+    imagen: "ruta/a/imagen3.png",
+    url: "/tema9",
+  },
+];
+
+const TemasCard = () => {
   return (
-    <div className="learning-unit">
-      <h2 className="title">Aprendizaje de la Unidad 3</h2>
-      <p>Aquí puedes colocar el contenido de aprendizaje de la unidad 3</p>
+    <div>
+      <center><h1><FaLaptop /> Unidad 3</h1></center>
+      <div className="row">
+        {temas.map((tema, index) => (
+          <div className="col-sm-4 mb-4" key={index}>
+            <Card style={{ maxWidth: "20rem", margin: "auto" }}>
+              <Card.Img variant="top" src={tema.imagen} />
+              <Card.Body>
+                <Card.Title>{tema.nombre}</Card.Title>
+                <Card.Text>{tema.descripcion}</Card.Text>
+                <a href={tema.url}>
+                  Ver más <FaExternalLinkAlt />
+                </a>
+              </Card.Body>
+            </Card>
+          </div>
+
+        ))}
+      </div>
     </div>
   );
 };
 
-export default LearningUnit;
+export default TemasCard;
