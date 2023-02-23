@@ -13,6 +13,8 @@ const guias = [
 
 function Guia() {
   return (
+    <div>
+      <center><h1>Guias Unidad 1</h1></center>
     <Tabs defaultActiveKey={guias[0].title} id="guias">
       {guias.map((guia) => (
         <Tab key={guia.id} eventKey={guia.title} title={guia.title}>
@@ -28,6 +30,7 @@ function Guia() {
         </Tab>
       ))}
     </Tabs>
+    </div>
   );
 }
 
