@@ -1,0 +1,34 @@
+[
+  {
+    "imgSrc": "https://i.ytimg.com/vi/Xm9Eah8t0d4/maxresdefault.jpg",
+    "title": "Unidad 1",
+    "text": "Intro a SO, procesos, hebras y planificación",
+    "link1": "/Pruebas/Unidad1",
+    "link2": "/Guias/Unidad1",
+    "link3": "/Aprender/Unidad1"
+  },
+  {
+    "imgSrc": "https://arctype.com/blog/content/images/2021/02/deadlock.jpeg",
+    "title": "Unidad 2",
+    "text": "Concurrencia, sincronización y deadlock",
+    "link1": "/Pruebas/Unidad2",
+    "link2": "/Guias/Unidad2",
+    "link3": "/Aprender/Unidad2"
+  },
+  {
+    "imgSrc": "https://i.ytimg.com/vi/Xm9Eah8t0d4/maxresdefault.jpg",
+    "title": "Unidad 3",
+    "text": "Gestión de la memoria e IO",
+    "link1": "/Pruebas/Unidad3",
+    "link2": "/Guias/Unidad3",
+    "link3": "/Aprender/Unidad3"
+  },
+  {
+    "imgSrc": "https://i.ytimg.com/vi/Xm9Eah8t0d4/maxresdefault.jpg",
+    "title": "REPASO P.A.",
+    "text": "Conglomerado de todo",
+    "link1": "/Pruebas/Repaso",
+    "link2": "/Guias/Repaso",
+    "link3": "/Aprender/Repaso"
+  }
+]
