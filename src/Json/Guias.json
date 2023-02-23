@@ -101,86 +101,337 @@
       "respuesta": "George Washington"
     },
     {
-      "id":14,
+      "id": 14,
       "unidad": "Unidad 1",
       "guia": "Guía 2",
-      "pregunta": "El siguiente código es un extracto modificado de la última parte del scheduler de Linux, el que se ejecuta en el contexto de los procesos usuarios:",  
+      "pregunta": "El siguiente código es un extracto modificado de la última parte del scheduler de Linux, el que se ejecuta en el contexto de los procesos usuarios:",
       "code": "",
       "pregunta2": "prev y next son punteros a los PCBs de dos procesos. prev apunta al proceso que actualmente se está ejecutando en el procesador, y next al proceso que el scheduler ha seleccionado para que se ejecute a continuación. Si el proceso seleccionado es distinto al actual, entonces en la línea 2 se actualiza el contador del número de veces que se ha realizado cambio de contexto. Esto es sólo para registrar estadísticas. Luego, en la línea 3 se realiza el cambio de contexto. Explique qué sentido tiene la instrucción return (línea 5) justo después de haber realizado el cambio de contexto. Pregúntese quién y cuándo se ejecuta dicha instrucción.",
       "respuesta": "George Washington"
     },
     {
-      "id":15,
+      "id": 15,
       "unidad": "Unidad 1",
       "guia": "Guía 2",
       "pregunta": "Para cada proceso que se ejecuta en el siguiente programa, indique los valores que se imprimen por pantalla en las líneas 7 y 13. Asuma que no existen errores, que el PID del primer proceso es 10 y que los procesos hijos se enumeran secuencialmente a partir de 11 de acuerdo al orden de creación. Justifique su respuesta a través de un diagrama.",
       "respuesta": "George Washington"
     },
     {
-      "id":16,
+      "id": 16,
       "unidad": "Unidad 1",
       "guia": "Guía 2",
       "pregunta": "Utilizando fork() y pipe(), cree la siguiente estructura de comunicación entre procesos:",
-      "pregunta2":"Comunicación bidireccional (2 procesos, N procesos) y Árbol binario (altura 3, altura N)",
-      "PreguntaImagen":"https://i.imgur.com/1Q1Z1Zm.png",
+      "pregunta2": "Comunicación bidireccional (2 procesos, N procesos) y Árbol binario (altura 3, altura N)",
+      "PreguntaImagen": "https://i.imgur.com/1Q1Z1Zm.png",
       "respuesta": "George Washington"
     },
     {
-      "id":17,
+      "id": 17,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "¿Qué políticas de planificación del procesador maximizan el throughtput?",
       "respuesta": "George Washington"
     },
     {
-      "id":18,
+      "id": 18,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "¿Por qué la política del procesador RR minimiza el tiempo de respuesta?",
       "respuesta": "George Washington"
     },
     {
-      "id":19,
+      "id": 19,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "En un sistema de tiempo compartido, 3 procesos se ejecutan concurrentemente en un procesador. Los tiempos de servicios son 10, 8 y 5 para p1, p2 y p3 respectivamente. Si los procesos no realizan I/O y el planificador RR usa un quantum de tiempo de 2 y el overhead de cambio de contexto es 0,5 ¿Cuál es la utilización del sistema? Justifique con desarrollo.",
       "respuesta": "George Washington"
     },
     {
-      "id":20,
+      "id": 20,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
-      "pregunta": "Suponga un sistema computacional con un planificador RR y quantum de tiempo q y overhead de tiempo de transferencia e. Asuma, además, que todos los procesos realizan I/O cuando ha transcurrido la mitad del quantum y que el overhead del módulo de I/O es t para cada parte de software. Asumiendo que existen muchos procesos, calcule la utilización del procesador. Explique.",  
+      "pregunta": "Suponga un sistema computacional con un planificador RR y quantum de tiempo q y overhead de tiempo de transferencia e. Asuma, además, que todos los procesos realizan I/O cuando ha transcurrido la mitad del quantum y que el overhead del módulo de I/O es t para cada parte de software. Asumiendo que existen muchos procesos, calcule la utilización del procesador. Explique.",
       "respuesta": "George Washington"
     },
     {
-      "id":21,
+      "id": 21,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
-      "pregunta":"Fixed-Priority Preemptive Scheduling (FPPS) es un algoritmo de planificación no apropiativo donde, en todo momento, el procesador siempre ejecuta el proceso de más alta prioridad entre todos los que se encuentran listos para ejecutarse. un problema común a este tipo de schedulers es que sufren de inanición. Dado este caso ¿qué mecanismos usted integraría al scheduler para evitar este problema? Ojo, no es cambiar de scheduler, sino evitar el problema.",
+      "pregunta": "Fixed-Priority Preemptive Scheduling (FPPS) es un algoritmo de planificación no apropiativo donde, en todo momento, el procesador siempre ejecuta el proceso de más alta prioridad entre todos los que se encuentran listos para ejecutarse. un problema común a este tipo de schedulers es que sufren de inanición. Dado este caso ¿qué mecanismos usted integraría al scheduler para evitar este problema? Ojo, no es cambiar de scheduler, sino evitar el problema.",
       "respuesta": "George Washington"
     },
     {
-      "id":22,
+      "id": 22,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "Qué característica hace difícil o imposible la implementación de políticas de planificación como SPN, SRT o HRRN. Para responder, recuerde cuál es la función de selección del próximo proceso a ejecutarse. Comente brevemente cada función.",
       "respuesta": "George Washington"
     },
     {
-      "id":23,
+      "id": 23,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "La ejecución de un syscall siempre implica un cambio en el modo de ejecución del sistema. Explique qué sentido tiene hacer este cambio y cuál es su costo en términos de performance.",
       "respuesta": "George Washington"
     },
     {
-      "id":24,
+      "id": 24,
       "unidad": "Unidad 1",
       "guia": "Guía 3",
       "pregunta": "Calcule la utilización del procesador en un sistema donde la mitad de los procesos son pesados en I/O y la otra mitad es pesado en cómputo. Para los primeros, considere que sólo un tercio del tiempo hacen cómputo y que están bajo un algoritmo de scheduling RR. Para los segundos, considere que se ha medido que en promedio sólo un décimo del tiempo hacen I/O y que están bajo un algoritmo de scheduling FCFS. Considere un quantum de tiempo q y overhead e.",
       "respuesta": "George Washington"
+    },
+    {
+      "id": 25,
+      "unidad": "Unidad 2",
+      "guia": "Guía 4",
+      "pregunta": "Pregunta 1 - Ventajas tiene el uso de hebra por sobre el uso de procesos.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 26,
+      "unidad": "Unidad 2",
+      "guia": "Guía 4",
+      "pregunta": "Pregunta 2 - ¿Qué problema potencial puede detectar en el código?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 27,
+      "unidad": "Unidad 2",
+      "guia": "Guía 4",
+      "pregunta": "Pregunta 3 - Para la siguiente programa:",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 28,
+      "unidad": "Unidad 2",
+      "guia": "Guía 4",
+      "pregunta": "Pregunta 4 - Explique por qué se da este comportamiento.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 29,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 1 - ¿Es la solución deadlock-free?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 30,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 2 - El comportamiento descrito es para ambos sentidos.",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 31,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 3 - ¿Se provee exclusión mutua a través de las funciones lock y unlock?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 32,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 4 - ¿Es posible que una solución basada en monitores a un problema de EM produzca deadlock?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 33,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 5 - Escriba las funciones usando semáforos , evitando inhanición y busy-waiting.?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 34,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 6 - Pregunta de los 100 reos",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 35,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 7 - ¿Qué es lo que se muestra por pantalla?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 36,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 8 - Modificando el código para que arroje la siguiente salida siempre",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 37,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 9 - Resolver el problema de concurrencia y no la lógica detrás de la cola",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 38,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 10 - Analice el siguiente código de una fila de enteros",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 39,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 11 - Coordine a los autos utilizando semáforos y evite que ocurra deadlock",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 40,
+      "unidad": "Unidad 2",
+      "guia": "Guía 5",
+      "pregunta": "Pregunta 12 - ¿Es posible que ocurra deadlock cuando los recursos compartidos son consumibles?",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 41,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 1 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 42,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 2 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 43,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 3 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 44,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 4 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 45,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 5 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 46,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 6 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 47,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 1 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 41,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 7 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 48,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 8 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 49,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 9 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 50,
+      "unidad": "Unidad 2",
+      "guia": "Guia extra",
+      "pregunta": "Pregunta 10 - ",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 51,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 1",
+      "pregunta": "Pregunta 1 - Int test_and_set(int *ptr)",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 52,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 1",
+      "pregunta": "Pregunta 2 - Int compare_and_swap(int *ptr, int expected, int new)",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 53,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 1",
+      "pregunta": "Pregunta 3 - Int fetch_and_add(int *ptr)",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 54,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 1 - Indique si se provee EM Inicialmente turn=0",
+      "respuesta": "George Washington"
+    },
+    {
+      "id": 55,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 2 - Indique si se provee EM Inicialemente flag[0]=flag[1]=false",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":56,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 3 - Indique si se provee EM Inicialemente flag[0]=flag[1]=false",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":55,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 4 - Indique si se provee EM Inicialemente flag[0]=flag[1]=false",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":56,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 5 - Indique si se provee EM Inicialemente flag[0]=flag[1]=false",
+      "respuesta": "George Washington"
+    },
+    {
+      "id":57,
+      "unidad": "Unidad 2",
+      "guia": "Trabajo en clases 2",
+      "pregunta": "Pregunta 6 - Sea lo siguiente, Modifique el código y cree una estructura thread-safe, para ello:",
+      "respuesta": "George Washington"
     }
-    
   ]
 }
