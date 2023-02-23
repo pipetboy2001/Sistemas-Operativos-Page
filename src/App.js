@@ -6,7 +6,6 @@ import './Styles/Index.scss';
 import Navbar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
-import About from "./Components/About";
 import NotFound from "./Components/NotFound";
 
 /*Unidad 1*/
@@ -29,7 +28,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
         <Route path="/Aprender/Unidad1" element={<Learning1 />} />
         <Route path="/Guias/Unidad1" element={<Guiades1 />} />
         <Route path="/Pruebas/Unidad1" element={<Exam1 />} />
