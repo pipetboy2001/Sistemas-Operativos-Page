@@ -6,19 +6,19 @@ const temas = [
   {
     nombre: "Sistema de administración de memoria",
     descripcion: "Particionamiento de la memoria física, direccionamiento físico y virtual, paginación, segmentación",
-    imagen: "ruta/a/imagen1.png",
+    imagen: "https://lcsistemasoperativos.files.wordpress.com/2015/02/administrador-de-memoria.png",
     url: "/tema7",
   },
   {
     nombre: "Sistemas de archivos",
     descripcion: "Organización y acceso de archivos y directorios, administración almacenamiento secundario, sistemas de archivos en Linux",
-    imagen: "ruta/a/imagen2.png",
+    imagen: "https://informaticoalrescate.com/wp-content/uploads/2019/03/sistema-de-archivos-esquema.jpg",
     url: "/tema8",
   },
   {
     nombre: "Administración de dispositivos de I/O",
     descripcion: "Organización de los servicios de I/O, buffering de I/O, planificación de disco, sistemas RAID",
-    imagen: "ruta/a/imagen3.png",
+    imagen: "https://arbizo.vivaldi.net/wp-content/uploads/sites/21037/2020/07/IOHw_Intro.png",
     url: "/tema9",
   },
 ];

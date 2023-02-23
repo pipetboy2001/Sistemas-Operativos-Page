@@ -6,19 +6,19 @@ const temas = [
   {
     nombre: "Hebras",
     descripcion: "Hebras versus procesos, multiprocesamiento simétrico, microkernels, manejo de hebras en Linux",
-    imagen: "ruta/a/imagen1.png",
+    imagen: "http://2.bp.blogspot.com/_yVRYtifeDcw/SQaTbWTAy3I/AAAAAAAAADY/ZLWSfXFPm8M/s400/Imagen9.png",
     url: "/tema4",
   },
   {
     nombre: "Concurrencia de procesos",
     descripcion: "Principios de concurrencia, exclusión mutua, mecanismos de sincronización: semáforos, monitores, bloqueos mutuos e inanición, sincronización de procesos y hebras en Linux",
-    imagen: "ruta/a/imagen2.png",
+    imagen: "https://www.oscarblancarteblog.com/wp-content/uploads/2017/03/1-1.png",
     url: "/tema5",
   },
   {
     nombre: "Deadlock",
     descripcion: "Condiciones necesarias y suficientes, cómo evitar el deadlock, el algoritmo del banquero, detección de deadlock",
-    imagen: "ruta/a/imagen3.png",
+    imagen: "https://sistemasoperativosunivia.files.wordpress.com/2014/12/blog5.jpg",
     url: "/tema6",
   },
 ];

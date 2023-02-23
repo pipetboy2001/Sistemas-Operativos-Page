@@ -6,19 +6,19 @@ const temas = [
   {
     nombre: "Introducción a los SOs",
     descripcion: "Revisión de sistemas computacionales e interrupciones",
-    imagen: "ruta/a/imagen1.png",
+    imagen: "https://th.bing.com/th/id/OIP.3M_hFd58wNTyibtbituHwQHaDt?pid=ImgDet&rs=1",
     url: "/tema1",
   },
   {
     nombre: "Procesos: El concepto de proceso",
     descripcion: "Descripción, control, creación, comunicación y sincronización de procesos, manejo en Linux, virtualización y contenedores",
-    imagen: "ruta/a/imagen2.png",
+    imagen: "https://sites.google.com/site/materiasisoperativo/_/rsrc/1368839777871/unidad-2-administrador-del-proceso-y-del-procesador/2-1-concepto-de-proceso/proceso1.png",
     url: "/tema2",
   },
   {
     nombre: "Planificación del procesador",
     descripcion: "Algoritmos de planificación y planificación multiprocesador",
-    imagen: "ruta/a/imagen3.png",
+    imagen: "https://1984.lsi.us.es/wiki-ssoo/images/ssoo/9/93/Procesos.jpg",
     url: "/tema3",
   },
 ];
