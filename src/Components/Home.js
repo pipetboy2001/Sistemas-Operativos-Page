@@ -22,7 +22,7 @@ function Home() {
           >
             <Card className="small-width-card mx-auto mb-3" border="secondary">
               <Card.Header as="h5">{card.title}</Card.Header>
-              <Card.Img variant="top" src={card.imgSrc} />
+              <Card.Img className="card-imagen" variant="top" src={card.imgSrc} />
               <Card.Body className="card-body">
                 <center><b><Card.Text>{card.text}</Card.Text></b></center>
                 <div className="d-flex justify-content-center">

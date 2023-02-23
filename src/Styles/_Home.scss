@@ -23,8 +23,17 @@
 .custom-card-img {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  width: 100%;
 }
 
 .small-width-card {
   max-width: 90%;
+}
+
+.card-imagen{
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  min-height: 17rem;
+  max-height: 17rem;
 }
