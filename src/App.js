@@ -7,6 +7,7 @@ import Navbar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import NotFound from "./Components/NotFound";
+import ScrollToTopButton from "./Components/ScrollToTop";
 
 /*Unidad 1*/
 import Learning1 from "./Components/Unidades/Unidad 1/Aprendisaje";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Pruebas/Unidad3" element={<Exam3 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />
     </Router>
   );
