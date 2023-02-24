@@ -1,63 +1,39 @@
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import Accordion from "react-bootstrap/Accordion";
 import PdfViewer from "../../PdfView";
+import PreguntasPorUnidadYGuia from './../../PreguntasPorUnidadYGuia';
+import { ImEye } from "react-icons/im";
+import { GiNotebook } from "react-icons/gi";
 
-function LeftTabsExample() {
+const pruebas = [
+  { id: "1", title: "Global 2-2022", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", prueba: "Global 2-2022" },
+  { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview", unidad: "Unidad 1", prueba: "Acosta 1-2022" },
+  { id: "3", title: "Rannou 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y0_QOwK2wEL5Mf7cy3C9SaQuG9k-ccp/preview", unidad: "Unidad 1", prueba: "Rannou 1-2022" }
+];
+
+function Prueba() {
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-      <Row>
-        <Col sm={3}>
-          <Nav variant="pills" className="flex-column">
-            <Nav.Item>
-              <Nav.Link eventKey="first">2022-2</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="second">20222-1 Acosta</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="three">20222-1 Rannou</Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Col>
-        <Col sm={9}>
-          <Tab.Content>
-            <Tab.Pane eventKey="first">
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>Ver Pdf</Accordion.Header>
-                  <Accordion.Body>
-                    <PdfViewer src="/src/assets/Unidad1/Guias/Guia1.pdf" />
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Pregunta 1</Accordion.Header>
-                  <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
-            </Tab.Pane>
-            <Tab.Pane eventKey="second">
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>Ver Pdf</Accordion.Header>
-                  <Accordion.Body>
-                    <PdfViewer src="/src/assets/Unidad1/Guias/Guia1.pdf" />
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Pregunta 1</Accordion.Header>
-                  <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-                </Accordion.Item>
-                
-              </Accordion>
-            </Tab.Pane>
-          </Tab.Content>
-        </Col>
-      </Row>
-    </Tab.Container>
+    <div>
+      <center><h1><GiNotebook />Pruebas Unidad 1</h1></center>
+      <Tabs defaultActiveKey={pruebas[0].title} id="pruebas">
+        {pruebas.map((prueba) => (
+          <Tab key={prueba.id} eventKey={prueba.title} title={prueba.title}>
+            <Accordion>
+              <Accordion.Item eventKey={prueba.title}>
+                <Accordion.Header>Ver Pdf <ImEye /></Accordion.Header>
+                <Accordion.Body>
+                  <PdfViewer src={prueba.pdfUrl} />
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <PreguntasPorUnidadYGuia unidad={prueba.unidad} prueba={prueba.prueba} />
+          </Tab>
+        ))}
+      </Tabs>
+    </div>
   );
 }
 
-export default LeftTabsExample;
+export default Prueba;
