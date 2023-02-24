@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { Container } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import cardData from "../Json/Menu.json";
@@ -11,7 +12,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <Container style={{ maxWidth: "1200px" }}>
       <Row xs={1} md={2} className="g-4">
         {cardData.map((card, idx) => (
           <Col
@@ -47,7 +48,7 @@ function Home() {
           </Col>
         ))}
       </Row>
-    </div>
+    </Container>
   );
 }
 
