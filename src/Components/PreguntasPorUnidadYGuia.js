@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import preguntas from '../Json/Guias.json';
 
@@ -22,12 +22,16 @@ function Pregunta({ pregunta }) {
 }
 
 function PreguntasPorUnidadYGuia({ unidad, guia }) {
+    const [activeKey, setActiveKey] = useState(null);
     const preguntasFiltradas = preguntas.preguntas.filter(
         (pregunta) => pregunta.unidad === unidad && pregunta.guia === guia
     );
+    const handleAccordionChange = (key) => {
+        setActiveKey(key);
+    };
 
     return (
-        <Accordion>
+        <Accordion activeKey={activeKey} onSelect={handleAccordionChange}>
             {preguntasFiltradas.map((pregunta) => (
                 <Pregunta key={pregunta.id} pregunta={pregunta} />
             ))}
@@ -36,3 +40,5 @@ function PreguntasPorUnidadYGuia({ unidad, guia }) {
 }
 
 export default PreguntasPorUnidadYGuia;
+
+
