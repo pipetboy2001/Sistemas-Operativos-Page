@@ -1,17 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Nav, Navbar, Offcanvas, Dropdown } from "react-bootstrap";
-
+import { useLocation } from "react-router-dom";
 const XL_SIZE = "xl";
-
 function OffcanvasExample() {
   const [expand] = useState(XL_SIZE);
-
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState("");
   const navbarProps = {
     bg: "dark",
     variant: "dark",
     expand: expand,
     className: "mb-3",
   };
+
+  useEffect(() => {
+    setCurrentPage(location.pathname);
+  }, [location]);
 
   function DropdownMenu({ unit }) {
     return (
@@ -20,13 +24,22 @@ function OffcanvasExample() {
           Unidad {unit}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href={`/Aprender/Unidad${unit}`}>
+          <Dropdown.Item
+            href={`/Aprender/Unidad${unit}`}
+            active={currentPage === `/Aprender/Unidad${unit}`}
+          >
             Aprender
           </Dropdown.Item>
-          <Dropdown.Item href={`/Guias/Unidad${unit}`}>
+          <Dropdown.Item
+            href={`/Guias/Unidad${unit}`}
+            active={currentPage === `/Guias/Unidad${unit}`}
+          >
             Guia
           </Dropdown.Item>
-          <Dropdown.Item href={`/Pruebas/Unidad${unit}`}>
+          <Dropdown.Item
+            href={`/Pruebas/Unidad${unit}`}
+            active={currentPage === `/Pruebas/Unidad${unit}`}
+          >
             Pruebas
           </Dropdown.Item>
         </Dropdown.Menu>
