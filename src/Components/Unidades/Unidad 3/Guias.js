@@ -1,58 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-/*Pdf viewer */
-import PdfViewer from "../../PdfView";
 import Accordion from "react-bootstrap/Accordion";
+import PdfViewer from "../../PdfView";
+import PreguntasPorUnidadYGuia from './../../PreguntasPorUnidadYGuia';
+import { ImEye } from "react-icons/im";
+import { GiNotebook } from "react-icons/gi";
+
+const guias = [
+  { id: "1", title: "Guia 6", pdfUrl: "https://drive.google.com/file/d/13egt47W-yj-9MLqw4DPDCxxmqH-26LZL/preview", unidad: "Unidad 3", guia: "Guía 6" },
+];
 
 function Guia() {
-  const [key, setKey] = useState("Guia6");
-
   return (
-    <>
-      <center><h1>Guias Unidad 3</h1></center>
-      <Tabs
-        id="controlled-tab-example"
-        activeKey={key}
-        onSelect={(k) => setKey(k)}
-        className="mb-3"
-      >
-        <Tab eventKey="Guia6" title="Guia 6">
-          <Accordion>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                Ver Pdf
-              </Accordion.Header>
-              <Accordion.Body>
-                <PdfViewer src="https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview" />
-              </Accordion.Body>
-            </Accordion.Item>
-
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>
-                Pregunta 1 - 
-              </Accordion.Header>
-              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </Tab>
-
-        <Tab eventKey="Guia7" title="Guia 7">
-          <Accordion>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>Ver Pdf</Accordion.Header>
-              <Accordion.Body>
-                <PdfViewer src="https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview" />
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>Pregunta 1 - ¿Cuántos procesos crea el siguiente código para MAX = 5?</Accordion.Header>
-              <Accordion.Body>Lorem ipsum dolor sit amet</Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </Tab>
+    <div>
+      <center><h1><GiNotebook /> Guias Unidad 3</h1></center>
+      <Tabs defaultActiveKey={guias[0].title} id="guias">
+        {guias.map((guia) => (
+          <Tab key={guia.id} eventKey={guia.title} title={guia.title}>
+            <Accordion>
+              <Accordion.Item eventKey={guia.title}>
+                <Accordion.Header>Ver Pdf <ImEye /></Accordion.Header>
+                <Accordion.Body>
+                  <PdfViewer src={guia.pdfUrl} />
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <PreguntasPorUnidadYGuia unidad={guia.unidad} guia={guia.guia} />
+          </Tab>
+        ))}
       </Tabs>
-    </>
+    </div>
   );
 }
 
