@@ -15,10 +15,10 @@ function Guia() {
   return (
     <div>
       <center><h1><GiNotebook /> Guias Unidad 3</h1></center>
-      <Tabs defaultActiveKey={guias[0].title} id="guias">
+      <Tabs className="mx-auto w-75" defaultActiveKey={guias[0].title} id="guias">
         {guias.map((guia) => (
           <Tab key={guia.id} eventKey={guia.title} title={guia.title}>
-            <Accordion>
+            <Accordion className="mx-auto w-75">
               <Accordion.Item eventKey={guia.title}>
                 <Accordion.Header>Ver Pdf <ImEye /></Accordion.Header>
                 <Accordion.Body>

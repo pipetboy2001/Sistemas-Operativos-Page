@@ -17,10 +17,10 @@ function Prueba() {
   return (
     <div>
       <center><h1><GiNotebook />Pruebas Unidad 1</h1></center>
-      <Tabs defaultActiveKey={pruebas[0].title} id="pruebas">
+      <Tabs className="mx-auto w-75" defaultActiveKey={pruebas[0].title} id="pruebas">
         {pruebas.map((prueba) => (
           <Tab key={prueba.id} eventKey={prueba.title} title={prueba.title}>
-            <Accordion>
+            <Accordion className="mx-auto w-75">
               <Accordion.Item eventKey={prueba.title}>
                 <Accordion.Header>Ver Pdf <ImEye /></Accordion.Header>
                 <Accordion.Body>

@@ -31,12 +31,13 @@ function PreguntasPorUnidadYGuia({ unidad, guia }) {
     };
 
     return (
-        <Accordion activeKey={activeKey} onSelect={handleAccordionChange}>
+        <Accordion className="mx-auto w-75" activeKey={activeKey} onSelect={handleAccordionChange}>
             {preguntasFiltradas.map((pregunta) => (
                 <Pregunta key={pregunta.id} pregunta={pregunta} />
             ))}
         </Accordion>
     );
+
 }
 
 export default PreguntasPorUnidadYGuia;
