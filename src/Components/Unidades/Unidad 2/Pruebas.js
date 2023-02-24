@@ -16,7 +16,7 @@ const pruebas = [
 function Prueba() {
   return (
     <div>
-      <center><h1><GiNotebook />Pruebas Unidad 1</h1></center>
+      <center><h1><GiNotebook />Pruebas Unidad 2</h1></center>
       <Tabs defaultActiveKey={pruebas[0].title} id="pruebas">
         {pruebas.map((prueba) => (
           <Tab key={prueba.id} eventKey={prueba.title} title={prueba.title}>
