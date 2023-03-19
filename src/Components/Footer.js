@@ -55,6 +55,19 @@ export const Footer = () => {
                   LIBRO - Operating System Three Easy Pieces
                 </a>
               </li>
+              <li>
+                <a
+                  href="../assets/Books/Operating-System-Concepts-10th-Edition.pdf"
+                  target="_blank"
+                  download
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  <BsBook className="me-2" />
+                  LIBRO - Operating System Concepts
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
