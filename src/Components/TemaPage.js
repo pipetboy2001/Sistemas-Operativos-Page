@@ -5,12 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function TemaPage() {
     const { temaId } = useParams();
+    // Filtrar las imágenes por temaId
+    const imagenesFiltradas = imagenes.filter((imagen) => imagen.temaId === temaId);
+
 
     return (
         <div className="container">
             <h1>{temaId}: </h1>
 
-            {imagenes.map((imagen, index) => (
+            {imagenesFiltradas.map((imagen, index) => (
                 <div className="row" key={index}>
                     <div className="col-md-8">
                         <img
