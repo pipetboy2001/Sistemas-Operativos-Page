@@ -57,9 +57,8 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="../assets/Books/Operating-System-Concepts-10th-Edition.pdf"
+                  href="https://github.com/pipetboy2001/Sistemas-Operativos-Page/raw/main/src/assets/Books/sistemas-operativos-william-stallings-5ta-ed.pdf"
                   target="_blank"
-                  download
                   rel="noopener noreferrer"
                   className="text-white"
                 >
