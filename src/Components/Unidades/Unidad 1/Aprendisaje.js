@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { FaLaptop, FaExternalLinkAlt } from "react-icons/fa";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const temas = [
   {
@@ -36,9 +37,9 @@ const TemasCard = () => {
               <Card.Body>
                 <Card.Title>{tema.nombre}</Card.Title>
                 <Card.Text>{tema.descripcion}</Card.Text>
-                <a href={tema.url}>
+                <Link to={tema.url}>
                   Ver más <FaExternalLinkAlt />
-                </a>
+                </Link>
               </Card.Body>
             </Card>
           </div>
