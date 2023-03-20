@@ -33,6 +33,20 @@
         "nombre": "Exepciones/Interrupciones",
         "descripcion": "Tenemos dos tipos de interrupciones: Excepciones y Interrupciones. Las excepciones son interrupciones que ocurren cuando el procesador detecta un error en la ejecución de una instrucción. Las interrupciones son interrupciones que ocurren cuando el procesador detecta un evento externo.",
         "temaId": "tema1"
+    },
+    {
+        "id": 6,
+        "imagen": "https://github.com/pipetboy2001/Sistemas-Operativos-Page/blob/main/src/assets/Unidad1/Aprendisaje/6.-Flujo%20sin%20interrupciones.gif?raw=true",
+        "nombre": "Flujo sin interrupciones",
+        "descripcion": "En un flujo sin interrupciones donde para calcular el tiempo de ejecución de un proceso se utiliza la siguiente formula: Tiempo usuario / tiempo total de ejecución. , donde el tiempo total de ejecución es el tiempo que tarda el procesador en ejecutar todas las instrucciones del proceso.",
+        "temaId": "tema1"
+    },
+    {
+        "id": 7,
+        "imagen": "https://github.com/pipetboy2001/Sistemas-Operativos-Page/blob/main/src/assets/Unidad1/Aprendisaje/7.-Flujo%20con%20interrupciones.gif?raw=true",
+        "nombre": "Flujo con interrupciones",
+        "descripcion": "En un flujo con interrupciones Cuando el procesador detecta una interrupción, en ves de esperar el flujo de datos pasa a el siguiente Proceso y ejecuta hasta que la espera termine para continuar con el proceso anterior.Esto crea un ahorro de tiempo en el procesador.",
+        "temaId": "tema1"
     }
 
 ]
