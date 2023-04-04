@@ -6,6 +6,7 @@ import PdfViewer from "../../PdfView";
 import PreguntasPorUnidadYGuia from './../../PreguntasPorUnidadYGuia';
 import { ImEye } from "react-icons/im";
 import { GiNotebook } from "react-icons/gi";
+import List from "../../PreguntasPorUnidadYGuia";
 
 const guias = [
   { id: "1", title: "Guia 1", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", guia: "Guía 1" },
@@ -28,7 +29,9 @@ function Guia() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-          <PreguntasPorUnidadYGuia unidad={guia.unidad} guia={guia.guia} />
+          <PreguntasPorUnidadYGuia unidad={guia.unidad} guia={guia.guia}>
+            <List unidad={guia.unidad} guia={guia.guia} />
+          </PreguntasPorUnidadYGuia>
         </Tab>
       ))}
     </Tabs>
