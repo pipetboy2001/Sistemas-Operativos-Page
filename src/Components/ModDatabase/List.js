@@ -25,38 +25,44 @@ function List() {
         <Container>
             <Row className="mb-4">
                 <Col>
-                    <h1>Lista de preguntas</h1>
+                    <h1>Lista de Guias</h1>
                 </Col>
                 <Col className="d-flex justify-content-end align-items-center">
-                    <Link to={'/database/new'}>
+                    {/* <Link to={'/database/new'}>
                         <Button variant="success">
                             Añadir nueva pregunta
                         </Button>
-                    </Link>
+                    </Link> */}
                 </Col>
             </Row>
 
             <Row>
                 <Col>
                     <ul className="list-group">
-                        {guias.map(guias => (
-                            <li key={guias.id} className="list-group-item">
-                                <h2>{guias.Guia}</h2>
-                                <p>Unidad: {guias.Unidad}</p>
-                                <p>{guias.Pregunta}</p>
-                                <p>{guias.Respuesta}</p>
-
+                        {guias.map(guia => (
+                            <li key={guia.id} className="list-group-item">
                                 <Link
                                     to={{
-                                        pathname: `/database/${guias.id}`,
-                                        state: { id: guias.id }
+                                        pathname: `/database/${guia.id}`,
+                                        state: { id: guia.id }
                                     }}>
-                                    <FaEdit />
+                                    <h2>{guia.Unidad}</h2>
+                                    <p>{guia.Guia}</p>
                                 </Link>
 
-                                <button onClick={() => handleDelete(guias.id)}>
-                                    <FaTrash />
-                                </button>
+                                <div className="d-flex align-items-center">
+                                    <Link
+                                        to={{
+                                            pathname: `/database/${guia.id}`,
+                                            state: { id: guia.id }
+                                        }}>
+                                        <FaEdit />
+                                    </Link>
+
+                                    <button className="btn btn-link" onClick={() => handleDelete(guia.id)}>
+                                        <FaTrash />
+                                    </button>
+                                </div>
                             </li>
                         ))}
                     </ul>
