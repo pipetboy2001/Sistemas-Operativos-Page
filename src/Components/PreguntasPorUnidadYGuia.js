@@ -30,7 +30,7 @@ function PreguntasPorUnidadYGuia({ unidad, guia }) {
     );
 
     return (
-            <>
+        <>
             {preguntasFiltradas.length > 0 && (
                 <Accordion className="mx-auto w-75" activeKey={activeKey} onSelect={handleAccordionChange}>
                     {preguntasFiltradas[0].preguntas.map((pregunta, index) => (
@@ -39,15 +39,27 @@ function PreguntasPorUnidadYGuia({ unidad, guia }) {
                                 {pregunta.pregunta}
                             </Accordion.Header>
                             <Accordion.Body>
+                                {pregunta.imagenPregunta && (
+                                    <img
+                                        src={pregunta.imagenPregunta}
+                                        alt="Pregunta Imagen"
+                                        style={{ maxWidth: '100%', maxHeight: '400px' }}
+                                    />
+                                )}
                                 <p>{pregunta.respuesta}</p>
+                                {pregunta.imagenRespuesta && (
+                                    <img
+                                        src={pregunta.imagenRespuesta}
+                                        alt="Respuesta Imagen"
+                                        style={{ maxWidth: '100%', maxHeight: '400px' }}
+                                    />
+                                )}
                             </Accordion.Body>
                         </Accordion.Item>
                     ))}
                 </Accordion>
             )}
-
-
-            </>
+        </>
 
     );
 }
