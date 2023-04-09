@@ -26,7 +26,7 @@ function Home() {
               <Card.Img className="card-imagen" variant="top" src={card.imgSrc} />
               <Card.Body className="card-body">
                 <center><b><Card.Text>{card.text}</Card.Text></b></center>
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center flex-wrap">
                   <a href={card.link3}>
                     <Button className="mx-1" variant="primary">
                       Aprender
@@ -45,6 +45,7 @@ function Home() {
                 </div>
               </Card.Body>
             </Card>
+
           </Col>
         ))}
       </Row>
