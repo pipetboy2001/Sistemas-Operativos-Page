@@ -12,7 +12,8 @@ const guias = [
   { id: "1", title: "Guia 1", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", guia: "Guía 1" },
   { id: "2", title: "Guia 2", pdfUrl: "https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview", unidad: "Unidad 1", guia: "Guía 2" },
   { id: "3", title: "Guia 3", pdfUrl: "https://drive.google.com/file/d/13Y0_QOwK2wEL5Mf7cy3C9SaQuG9k-ccp/preview", unidad: "Unidad 1", guia: "Guía 3" },
-  { id: "1.1", title: "Guía 1 Ayudantia", pdfUrl: "https://drive.google.com/file/d/1ICinHU8bYJGUkeMEkRnrPa5flQUzsoeq/preview", unidad: "Unidad 1", guia: "Guía 1 Ayudantia"}
+  { id: "1.1", title: "Guía 1 Ayudantia", pdfUrl: "https://drive.google.com/file/d/1ICinHU8bYJGUkeMEkRnrPa5flQUzsoeq/preview", unidad: "Unidad 1", guia: "Guía 1 Ayudantia"},
+  { id: "2.1", title: "Guía 2 Ayudantia", pdfUrl: "https://drive.google.com/file/d/1IEWntLgvQ8SQMu5AfL2oObxL2OUZLgl9/preview", unidad: "Unidad 1", guia: "Guía 2 Ayudantia" }
 ];
 
 function Guia() {
