@@ -24,10 +24,6 @@ import Exam3 from "./Components/Unidades/Unidad 3/Pruebas";
 /*Tema*/
 import TemaPage from "./Components/TemaPage";
 
-/*Firebase database*/
-import New from "./Components/ModDatabase/New";
-import Details from "./Components/ModDatabase/Details";
-import List from "./Components/ModDatabase/List";
 
 
 
@@ -46,10 +42,6 @@ function App() {
         <Route path="/Aprender/Unidad3" element={<Learning3 />} />
         <Route path="/Guias/Unidad3" element={<Guiades3 />} />
         <Route path="/Pruebas/Unidad3" element={<Exam3 />} />
-
-        <Route path="/database" element={<List />} />
-        <Route path="/database/new" element={<New />} />
-        <Route path="/database/:id" element={<Details />} />
 
 
         

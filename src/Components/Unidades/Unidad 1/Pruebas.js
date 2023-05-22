@@ -3,9 +3,10 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Accordion from "react-bootstrap/Accordion";
 import PdfViewer from "../../PdfView";
-import PreguntasPorUnidadYGuia from './../../PreguntasPorUnidadYGuia';
+import PreguntasPorUnidadYPrueba from "./../../PreguntaPorPrueba";
 import { ImEye } from "react-icons/im";
 import { GiNotebook } from "react-icons/gi";
+import List from "./../../PreguntaPorPrueba";
 
 const pruebas = [
   { id: "1", title: "Global 2-2022", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", prueba: "Global 2-2022" },
@@ -16,7 +17,7 @@ const pruebas = [
 function Prueba() {
   return (
     <div>
-      <center><h1><GiNotebook />Pruebas Unidad 1</h1></center>
+      <center><h1><GiNotebook /> Guias Unidad 1</h1></center>
       <Tabs className="mx-auto w-75" defaultActiveKey={pruebas[0].title} id="pruebas">
         {pruebas.map((prueba) => (
           <Tab key={prueba.id} eventKey={prueba.title} title={prueba.title}>
@@ -28,7 +29,9 @@ function Prueba() {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-            <PreguntasPorUnidadYGuia unidad={prueba.unidad} prueba={prueba.prueba} />
+            <PreguntasPorUnidadYPrueba unidad={prueba.unidad} prueba={prueba.prueba}>
+              <List unidad={prueba.unidad} prueba={prueba.prueba} />
+            </PreguntasPorUnidadYPrueba>
           </Tab>
         ))}
       </Tabs>
