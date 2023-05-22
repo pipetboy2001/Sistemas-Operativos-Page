@@ -16,7 +16,7 @@
     "link3": "/Aprender/Unidad2"
   },
   {
-    "imgSrc": "https://www.ionos.es/digitalguide/fileadmin/_processed_/a/e/csm_ram-t_2c2cad1f6d.jpg",
+    "imgSrc": "https://th.bing.com/th/id/R.eb90cf078feb7273736c26dc5d9ab4fe?rik=7qMTZsyRJFTvyQ&pid=ImgRaw&r=0",
     "title": "Unidad 3",
     "text": "Gestión de la memoria e IO",
     "link1": "/Pruebas/Unidad3",
@@ -27,8 +27,6 @@
     "imgSrc": "https://i.ytimg.com/vi/fsuroRYmagw/maxresdefault.jpg",
     "title": "REPASO P.A.",
     "text": "Conglomerado de todo",
-    "link1": "/Pruebas/Repaso",
-    "link2": "/Guias/Repaso",
-    "link3": "/Aprender/Repaso"
+    "link1": "/Pruebas/Repaso"
   }
 ]

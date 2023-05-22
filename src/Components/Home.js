@@ -27,25 +27,34 @@ function Home() {
               <Card.Body className="card-body">
                 <center><b><Card.Text>{card.text}</Card.Text></b></center>
                 <div className="d-flex justify-content-center flex-wrap">
-                  <a href={card.link3}>
-                    <Button className="mx-1" variant="primary">
-                      Aprender
-                    </Button>
-                  </a>
-                  <a href={card.link2}>
-                    <Button className="mx-1" variant="primary">
-                      Guias
-                    </Button>
-                  </a>
-                  <a href={card.link1}>
-                    <Button className="mx-1" variant="primary">
-                      Pruebas
-                    </Button>
-                  </a>
+                  {card.hasOwnProperty('link1') && !card.hasOwnProperty('link2') && !card.hasOwnProperty('link3') ? (
+                    <a href={card.link1}>
+                      <Button className="mx-1" variant="primary">
+                        Pruebas
+                      </Button>
+                    </a>
+                  ) : (
+                    <>
+                      <a href={card.link3}>
+                        <Button className="mx-1" variant="primary">
+                          Aprender
+                        </Button>
+                      </a>
+                      <a href={card.link2}>
+                        <Button className="mx-1" variant="primary">
+                          Guias
+                        </Button>
+                      </a>
+                      <a href={card.link1}>
+                        <Button className="mx-1" variant="primary">
+                          Pruebas
+                        </Button>
+                      </a>
+                    </>
+                  )}
                 </div>
               </Card.Body>
             </Card>
-
           </Col>
         ))}
       </Row>
