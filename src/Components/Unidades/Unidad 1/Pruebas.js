@@ -9,9 +9,9 @@ import { GiNotebook } from "react-icons/gi";
 import List from "./../../PreguntaPorPrueba";
 
 const pruebas = [
-  { id: "1", title: "Global 2-2022", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", prueba: "Global 2-2022" },
-  { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview", unidad: "Unidad 1", prueba: "Acosta 1-2022" },
-  { id: "3", title: "Rannou 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y0_QOwK2wEL5Mf7cy3C9SaQuG9k-ccp/preview", unidad: "Unidad 1", prueba: "Rannou 1-2022" }
+  { id: "1", title: "Global 2-2022", pdfUrl: "https://drive.google.com/file/d/1Oeis1VPzwr5ycNPDwf1jg2B_ctwFKwOU/preview", unidad: "Unidad 1", prueba: "Global 2-2022" },
+  { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/1O_03T2spdcED574ukmkheqU3EUI-Pbsu/preview", unidad: "Unidad 1", prueba: "Acosta 1-2022" },
+  { id: "3", title: "Rannou 1-2022", pdfUrl: "", unidad: "Unidad 1", prueba: "Rannou 1-2022" }
 ];
 
 function Prueba() {
