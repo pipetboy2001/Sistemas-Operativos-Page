@@ -3,9 +3,10 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Accordion from "react-bootstrap/Accordion";
 import PdfViewer from "../../PdfView";
-import PreguntasPorUnidadYGuia from './../../PreguntasPorUnidadYGuia';
+import PreguntasPorUnidadYPrueba from "./../../PreguntaPorPrueba";
 import { ImEye } from "react-icons/im";
 import { GiNotebook } from "react-icons/gi";
+import List from "./../../PreguntaPorPrueba";
 
 const pruebas = [
   //{ id: "0", title: "Global 1-2023", pdfUrl: "", unidad: "Unidad 2", prueba: "Global 1-2023" },
@@ -30,7 +31,9 @@ function Prueba() {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-            <PreguntasPorUnidadYGuia unidad={prueba.unidad} prueba={prueba.prueba} />
+            <PreguntasPorUnidadYPrueba unidad={prueba.unidad} prueba={prueba.prueba}>
+              <List unidad={prueba.unidad} prueba={prueba.prueba} />
+            </PreguntasPorUnidadYPrueba>
           </Tab>
         ))}
       </Tabs>
