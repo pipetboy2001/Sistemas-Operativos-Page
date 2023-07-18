@@ -8,9 +8,11 @@ import { ImEye } from "react-icons/im";
 import { GiNotebook } from "react-icons/gi";
 
 const pruebas = [
-  { id: "1", title: "Global 2-2022", pdfUrl: "https://drive.google.com/file/d/13YNJAkjcsgbyzTWNSmThXZ29qaa_TWqi/preview", unidad: "Unidad 1", prueba: "Global 2-2022" },
-  { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y9XVWBHWqGPp1HiMWJKsn_9PYXvf_Fe/preview", unidad: "Unidad 1", prueba: "Acosta 1-2022" },
-  { id: "3", title: "Rannou 1-2022", pdfUrl: "https://drive.google.com/file/d/13Y0_QOwK2wEL5Mf7cy3C9SaQuG9k-ccp/preview", unidad: "Unidad 1", prueba: "Rannou 1-2022" }
+  { id: "1", title: "Global 1-2023", pdfUrl: "", unidad: "Unidad 3", prueba: "Global 1-2023" },
+  { id: "1", title: "Global 2-2022", pdfUrl: "", unidad: "Unidad 3", prueba: "Global 2-2022" },
+  { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/141M4GzLkXWVfMhn9mZ1gKO4XmIOWFk76/preview", unidad: "Unidad 3", prueba: "Acosta 1-2022" },
+  { id: "3", title: "Rannou 1-2022", pdfUrl: "https://drive.google.com/file/d/1TbG0TXWKp-KnWrhyZGp6mxn1o1US4Nw1/preview", unidad: "Unidad 3", prueba: "Rannou 1-2022" },
+  { id: "4", title: "Global 2-2021", pdfUrl: "", unidad: "Unidad 3", prueba: "Global 2-2021" }
 ];
 
 function Prueba() {
