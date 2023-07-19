@@ -13,7 +13,7 @@ const pruebas = [
   { id: "1", title: "Global 2-2022", pdfUrl: "", unidad: "Unidad 3", prueba: "Global 2-2022" },
   { id: "2", title: "Acosta 1-2022", pdfUrl: "https://drive.google.com/file/d/14ELd4eBWidFJex-YkcvJXv9U1H-_R4oX/preview", unidad: "Unidad 3", prueba: "Acosta 1-2022" },
   { id: "3", title: "Rannou 1-2022", pdfUrl: "https://drive.google.com/file/d/1TbG0TXWKp-KnWrhyZGp6mxn1o1US4Nw1/preview", unidad: "Unidad 3", prueba: "Rannou 1-2022" },
-  { id: "4", title: "Global 2-2021", pdfUrl: "", unidad: "Unidad 3", prueba: "Global 2-2021" }
+  { id: "4", title: "Global 2-2021", pdfUrl: "https://drive.google.com/file/d/14HH6hZ-EE8y3EIOIfqJJh65DqdNp9WNm/preview", unidad: "Unidad 3", prueba: "Global 2-2021" }
 ];
 
 function Prueba() {
