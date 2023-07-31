@@ -1,0 +1,38 @@
+[
+    {
+        "id": "tema1",
+        "nombre": "Introducción a los SOs"
+    },
+    {
+        "id": "tema2",
+        "nombre": "Procesos: El concepto de proceso"
+    },
+    {
+        "id": "tema3",
+        "nombre": "Planificación del procesador"
+    },
+    {
+        "id": "tema4",
+        "nombre": "Hebras"
+    },
+    {
+        "id": "tema5",
+        "nombre": "Concurrencia de procesos"
+    },
+    {
+        "id": "tema6",
+        "nombre": "Deadlocks"
+    },
+    {
+        "id": "tema7",
+        "nombre": "Sistema de administración de memoria"
+    },
+    {
+        "id": "tema8",
+        "nombre": "Sistemas de archivos"
+    },
+    {
+        "id": "tema9",
+        "nombre": "Administración de dispositivos de I/O"
+    }
+]
